@@ -54,7 +54,7 @@ export const menu: Pizza[] = [
     description:
       "Pesto de albahaca, burrata, pistache y ralladura de limón sobre masa carbonizada al punto.",
     price: 259,
-    photo: "ingredients",
+    photo: "pizzaGreen",
     badges: ["Nueva"],
   },
 ];

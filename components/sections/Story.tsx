@@ -70,7 +70,7 @@ export function Story() {
               <Parallax distance={40} className="absolute inset-0 scale-110">
                 <Image
                   src={unsplash(photos.doughCraft, 1200)}
-                  alt="Masa de fermentación lenta trabajada a mano en FORNO"
+                  alt="Fermentación lenta: el oficio artesanal detrás de la masa"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"

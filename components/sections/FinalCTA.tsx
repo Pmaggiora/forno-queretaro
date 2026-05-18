@@ -8,8 +8,8 @@ export function FinalCTA() {
   return (
     <section className="grain relative overflow-hidden">
       <Image
-        src={unsplash(photos.ovenFire, 2000)}
-        alt="Horno encendido de FORNO"
+        src={unsplash(photos.ovenHeat, 2000)}
+        alt="Pizza recién horneada en FORNO"
         fill
         sizes="100vw"
         className="object-cover"

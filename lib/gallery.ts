@@ -9,8 +9,8 @@ export type GalleryItem = {
 
 export const gallery: GalleryItem[] = [
   {
-    photo: "ovenFire",
-    alt: "Horno tradicional de FORNO con el fuego encendido",
+    photo: "ovenHeat",
+    alt: "Queso fundido y vapor: el calor del horno en FORNO",
     span: "tall",
   },
   {
@@ -20,7 +20,7 @@ export const gallery: GalleryItem[] = [
   },
   {
     photo: "doughCraft",
-    alt: "Masa de fermentación lenta trabajada a mano",
+    alt: "Pan artesanal de fermentación lenta",
     span: "regular",
   },
   {
@@ -30,12 +30,12 @@ export const gallery: GalleryItem[] = [
   },
   {
     photo: "closeCheese",
-    alt: "Detalle de queso fundido y borde carbonizado",
+    alt: "Borde carbonizado estilo New Haven, recién horneado",
     span: "wide",
   },
   {
     photo: "ingredients",
-    alt: "Ingredientes frescos y premium sobre la barra",
+    alt: "Ingredientes frescos: tomate, muzzarella y albahaca",
     span: "tall",
   },
 ];
