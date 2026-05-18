@@ -69,7 +69,7 @@ export function Story() {
             <div className="grain relative aspect-[4/5] overflow-hidden rounded-[var(--radius-xl2)] shadow-lift">
               <Parallax distance={40} className="absolute inset-0 scale-110">
                 <Image
-                  src={unsplash(photos.doughCraft, 1200)}
+                  src={unsplash(photos.masaCraft, 1200)}
                   alt="Fermentación lenta: el oficio artesanal detrás de la masa"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

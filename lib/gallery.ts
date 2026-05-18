@@ -19,8 +19,8 @@ export const gallery: GalleryItem[] = [
     span: "wide",
   },
   {
-    photo: "doughCraft",
-    alt: "Pan artesanal de fermentación lenta",
+    photo: "masaCraft",
+    alt: "Masa rústica y oficio artesanal sobre harina",
     span: "regular",
   },
   {

@@ -11,13 +11,15 @@ export function unsplash(id: string, width = 1600): string {
 export const photos = {
   heroPizza: "1513104890138-7c749659a591", // pizza al horno, primer plano
   ovenHeat: "1593504049359-74330189a345", // cheese pull + vapor, calor
-  doughCraft: "1509440159596-0249088772ff", // pan artesanal + trigo, fermentación
+  masaCraft: "1595854341625-f33ee10dbf94", // pizza rústica sobre harina, oficio
   pizzaBoard: "1565299624946-b28f40a0ae38", // pizza sobre tabla de madera
   margherita: "1574071318508-1cdbab80d002", // margherita clásica con albahaca
   slice: "1571407970349-bc81e7e96d47", // rebanada fina, manos
   pizzaGreen: "1593560708920-61dd98c46a4e", // pizza verde, ricotta y hojas
+  pizzaMushroom: "1590947132387-155cc02f3212", // pizza de hongos en tabla
+  pizzaDark: "1571997478779-2adcbbe9ab2f", // pizza completa, fondo oscuro
   ambienceTable: "1517248135467-4c7edcad34c4", // interior moderno de restaurante
-  ambienceNight: "1538488881038-e252a119ace7", // bar cálido nocturno, Brooklyn
+  ambienceNight: "1538488881038-e252a119ace7", // bar cálido nocturno
   ingredients: "1592417817098-8fd3d9eb14a5", // tomate, muzzarella, albahaca
   pizzaTop: "1604382354936-07c5d9983bd3", // pizza completa cenital
   closeCheese: "1571066811602-716837d681de", // pizza rústica, borde carbonizado

@@ -31,7 +31,7 @@ export function Experience() {
         <div className="flex flex-col justify-center gap-8">
           <SectionHeading
             eyebrow="El local"
-            title="Un pedazo de Brooklyn en el Centro."
+            title="Un rincón cálido en el Centro."
             intro="Mesas comunales, vinilos de fondo y el horno como protagonista. FORNO es para quedarse, no solo para comer."
           />
 

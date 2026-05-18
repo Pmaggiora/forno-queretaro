@@ -5,58 +5,100 @@ export type Pizza = {
   description: string;
   price: number;
   photo: PhotoKey;
-  badges: string[];
+  badge?: string;
 };
 
-export const menu: Pizza[] = [
+export const pizzas: Pizza[] = [
   {
-    name: "New Haven Roja",
+    name: "Clásica Tomato Pie",
     description:
-      "La original. Salsa de tomate San Marzano, orégano, ajo y un hilo de oliva. Sin muzzarella, como manda New Haven.",
-    price: 215,
+      "Salsa de tomate italiana, ajo rostizado, pecorino romano, aceite de oliva extra virgen y albahaca fresca.",
+    price: 240,
     photo: "margherita",
-    badges: ["New Haven clásica", "Más pedida"],
+    badge: "New Haven clásica",
   },
   {
-    name: "Mootz",
+    name: "White Clam Pizza",
     description:
-      "Muzzarella fresca tirada a mano, tomate lento y albahaca cortada al momento sobre masa de fermentación de 48 h.",
-    price: 248,
-    photo: "pizzaBoard",
-    badges: ["Favorita de la casa"],
-  },
-  {
-    name: "White Clam",
-    description:
-      "La leyenda de Wooster Street: almeja fresca, ajo, oliva, orégano y limón. Sin salsa, puro carácter.",
-    price: 289,
+      "Base blanca con mozzarella fresca, almejas, ajo, perejil, limón y hojuelas de chile.",
+    price: 320,
     photo: "closeCheese",
-    badges: ["Edición de temporada"],
+    badge: "Especialidad",
   },
   {
-    name: "Sopressata Picante",
+    name: "Pepperoni Hot Honey",
     description:
-      "Sopressata curada, miel de chile de árbol, muzzarella y un toque de tomate quemado en horno.",
-    price: 268,
+      "Mozzarella, pepperoni artesanal, miel picante y parmesano añejo.",
+    price: 295,
     photo: "pizzaTop",
-    badges: ["Picante"],
+    badge: "Dulce-picante",
   },
   {
-    name: "Hongos & Trufa",
+    name: "Smoky Sausage",
     description:
-      "Mezcla de hongos salteados, ricotta, aceite de trufa y tomillo. Tierra y humo en cada borde.",
-    price: 276,
+      "Salsa de tomate, salchicha italiana, cebolla caramelizada, mozzarella ahumada y orégano.",
+    price: 285,
+    photo: "pizzaBoard",
+    badge: "Ahumada",
+  },
+  {
+    name: "Mushroom & Truffle",
+    description:
+      "Mozzarella fior di latte, mezcla de hongos rostizados, ricotta y aceite de trufa.",
+    price: 310,
+    photo: "pizzaMushroom",
+    badge: "Vegetariana",
+  },
+  {
+    name: "Vodka Pie",
+    description:
+      "Salsa vodka cremosa, mozzarella fresca, parmesano y albahaca.",
+    price: 290,
     photo: "slice",
-    badges: ["Vegetariana"],
+    badge: "Cremosa",
   },
   {
-    name: "Verde Quemada",
+    name: "Roasted Pepper & Burrata",
     description:
-      "Pesto de albahaca, burrata, pistache y ralladura de limón sobre masa carbonizada al punto.",
-    price: 259,
+      "Pimientos rostizados, tomate cherry, burrata fresca, pesto y aceite de oliva.",
+    price: 325,
     photo: "pizzaGreen",
-    badges: ["Nueva"],
+    badge: "Vegetariana",
   },
+  {
+    name: "The New Haven Special",
+    description:
+      "Pepperoni, salchicha italiana, tocino ahumado, cebolla morada y chile calabrés.",
+    price: 340,
+    photo: "pizzaDark",
+    badge: "La más intensa",
+  },
+];
+
+export type MenuLine = { name: string; price: string };
+
+export const extras: MenuLine[] = [
+  { name: "Burrata fresca", price: "$70" },
+  { name: "Pepperoni artesanal", price: "$45" },
+  { name: "Hongos rostizados", price: "$40" },
+  { name: "Chile calabrés", price: "$35" },
+  { name: "Miel picante", price: "$30" },
+  { name: "Anchovies", price: "$50" },
+  { name: "Extra mozzarella", price: "$45" },
+];
+
+export const bebidas: MenuLine[] = [
+  { name: "Soda italiana", price: "$65" },
+  { name: "Lemonade artesanal", price: "$55" },
+  { name: "Cerveza artesanal", price: "$90" },
+  { name: "Vino tinto de la casa", price: "$120 copa" },
+  { name: "Espresso frío", price: "$60" },
+];
+
+export const postres: MenuLine[] = [
+  { name: "Cannoli relleno de ricotta", price: "$95" },
+  { name: "Gelato artesanal", price: "$90" },
+  { name: "Tiramisú clásico", price: "$110" },
 ];
 
 export const heroPhoto = photos.heroPizza;
