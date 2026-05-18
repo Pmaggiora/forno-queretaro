@@ -11,7 +11,6 @@ import {
   postres,
   type MenuLine,
 } from "@/lib/menu";
-import { unsplash, photos } from "@/lib/images";
 import { site } from "@/lib/site";
 
 function ListBlock({
@@ -64,8 +63,8 @@ export function Menu() {
             >
               <div className="grain relative aspect-[5/4] overflow-hidden">
                 <Image
-                  src={unsplash(photos[pizza.photo], 800)}
-                  alt={`Pizza ${pizza.name}`}
+                  src={pizza.image}
+                  alt={`Pizza ${pizza.name} de FORNO`}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06]"

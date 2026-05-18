@@ -1,10 +1,9 @@
-import { photos, type PhotoKey } from "@/lib/images";
-
 export type Pizza = {
   name: string;
   description: string;
   price: number;
-  photo: PhotoKey;
+  /** Local image in /public/menu. */
+  image: string;
   badge?: string;
 };
 
@@ -14,7 +13,7 @@ export const pizzas: Pizza[] = [
     description:
       "Salsa de tomate italiana, ajo rostizado, pecorino romano, aceite de oliva extra virgen y albahaca fresca.",
     price: 240,
-    photo: "margherita",
+    image: "/menu/clasica-tomato-pie.jpg",
     badge: "New Haven clásica",
   },
   {
@@ -22,7 +21,7 @@ export const pizzas: Pizza[] = [
     description:
       "Base blanca con mozzarella fresca, almejas, ajo, perejil, limón y hojuelas de chile.",
     price: 320,
-    photo: "closeCheese",
+    image: "/menu/white-clam.jpg",
     badge: "Especialidad",
   },
   {
@@ -30,7 +29,7 @@ export const pizzas: Pizza[] = [
     description:
       "Mozzarella, pepperoni artesanal, miel picante y parmesano añejo.",
     price: 295,
-    photo: "pizzaTop",
+    image: "/menu/pepperoni-hot-honey.jpg",
     badge: "Dulce-picante",
   },
   {
@@ -38,7 +37,7 @@ export const pizzas: Pizza[] = [
     description:
       "Salsa de tomate, salchicha italiana, cebolla caramelizada, mozzarella ahumada y orégano.",
     price: 285,
-    photo: "pizzaBoard",
+    image: "/menu/smoky-sausage.jpg",
     badge: "Ahumada",
   },
   {
@@ -46,7 +45,7 @@ export const pizzas: Pizza[] = [
     description:
       "Mozzarella fior di latte, mezcla de hongos rostizados, ricotta y aceite de trufa.",
     price: 310,
-    photo: "pizzaMushroom",
+    image: "/menu/mushroom-truffle.jpg",
     badge: "Vegetariana",
   },
   {
@@ -54,7 +53,7 @@ export const pizzas: Pizza[] = [
     description:
       "Salsa vodka cremosa, mozzarella fresca, parmesano y albahaca.",
     price: 290,
-    photo: "slice",
+    image: "/menu/vodka-pie.jpg",
     badge: "Cremosa",
   },
   {
@@ -62,7 +61,7 @@ export const pizzas: Pizza[] = [
     description:
       "Pimientos rostizados, tomate cherry, burrata fresca, pesto y aceite de oliva.",
     price: 325,
-    photo: "pizzaGreen",
+    image: "/menu/roasted-pepper-burrata.jpg",
     badge: "Vegetariana",
   },
   {
@@ -70,7 +69,9 @@ export const pizzas: Pizza[] = [
     description:
       "Pepperoni, salchicha italiana, tocino ahumado, cebolla morada y chile calabrés.",
     price: 340,
-    photo: "pizzaDark",
+    // Placeholder temporal (reusa Smoky Sausage) hasta tener la foto
+    // definitiva: /menu/new-haven-special.jpg
+    image: "/menu/smoky-sausage.jpg",
     badge: "La más intensa",
   },
 ];
@@ -100,5 +101,3 @@ export const postres: MenuLine[] = [
   { name: "Gelato artesanal", price: "$90" },
   { name: "Tiramisú clásico", price: "$110" },
 ];
-
-export const heroPhoto = photos.heroPizza;
