@@ -1,4 +1,5 @@
 import { Clock, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import { FacebookIcon, InstagramIcon } from "@/components/ui/SocialIcons";
 import { site } from "@/lib/site";
 
@@ -10,10 +11,13 @@ export function Footer() {
       <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
         <div className="grid gap-14 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div className="flex flex-col gap-5">
-            <span className="font-display text-4xl font-extrabold">
-              {site.name}
-              <span className="text-tomato">.</span>
-            </span>
+            <Image
+              src="/brand/forno-negativo.svg"
+              alt={site.name}
+              width={1678}
+              height={331}
+              className="h-9 w-auto"
+            />
             <p className="max-w-xs text-sm leading-relaxed text-ivory/55">
               {site.description}
             </p>
