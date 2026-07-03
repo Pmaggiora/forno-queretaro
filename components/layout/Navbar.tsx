@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { site } from "@/lib/site";
@@ -38,13 +39,30 @@ export function Navbar() {
           <a
             href="#top"
             aria-label={`${site.name} — inicio`}
-            className={cn(
-              "font-display text-2xl font-extrabold tracking-tight transition-colors",
-              scrolled ? "text-soft-black" : "text-ivory",
-            )}
+            className="relative inline-flex items-center"
           >
-            {site.name}
-            <span className="text-tomato">.</span>
+            <Image
+              src="/brand/forno-negativo.svg"
+              alt={site.name}
+              width={1678}
+              height={331}
+              priority
+              className={cn(
+                "h-6 w-auto transition-opacity duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
+                scrolled ? "opacity-0" : "opacity-100",
+              )}
+            />
+            <Image
+              src="/brand/forno-negro.svg"
+              alt=""
+              aria-hidden
+              width={1678}
+              height={331}
+              className={cn(
+                "absolute left-0 h-6 w-auto transition-opacity duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
+                scrolled ? "opacity-100" : "opacity-0",
+              )}
+            />
           </a>
 
           <div className="hidden items-center gap-9 lg:flex">
@@ -106,10 +124,13 @@ export function Navbar() {
             className="fixed inset-0 z-50 flex flex-col bg-soft-black text-ivory lg:hidden"
           >
             <div className="flex h-18 items-center justify-between px-5 py-4">
-              <span className="font-display text-2xl font-extrabold">
-                {site.name}
-                <span className="text-tomato">.</span>
-              </span>
+              <Image
+                src="/brand/forno-negativo.svg"
+                alt={site.name}
+                width={1678}
+                height={331}
+                className="h-6 w-auto"
+              />
               <button
                 type="button"
                 onClick={() => setOpen(false)}
